@@ -51,20 +51,6 @@ Landing page estática y responsive tipo startup tecnológica / SaaS, enfocada e
 
 3. Abre `index.html` en tu navegador para previsualizar la landing.
 
-## Despliegue en GitHub Pages
-
-1. Sube el código a un repositorio de GitHub.
-2. En GitHub, ve a **Settings → Pages**.
-3. En **Source**, selecciona:
-   - **Branch**: `main` (o la rama donde tengas los archivos).
-   - **Folder**: `/root`.
-4. Guarda los cambios. GitHub generará una URL del tipo:
-
-   ```text
-   https://tu-usuario.github.io/tu-repo
-   ```
-
-5. Espera unos minutos y entra en la URL para ver la landing publicada.
 
 ## Personalización rápida
 

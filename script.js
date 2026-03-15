@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     nav.addEventListener("click", (event) => {
-      if (event.target instanceof HTMLAnchorElement) {
+      const target = event.target;
+      if (target && target.tagName === "A") {
         nav.classList.remove("navbar__nav--open");
         toggle.classList.remove("navbar__toggle--open");
       }
@@ -19,15 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Animaciones de aparición al hacer scroll
-  const revealElements = document.querySelectorAll<HTMLElement>(".reveal");
+  const revealElements = document.querySelectorAll(".reveal");
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries, obs) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const el = entry.target as HTMLElement;
-            el.classList.add("reveal--visible");
+            const el = entry.target;
+            if (el && el.classList) {
+              el.classList.add("reveal--visible");
+            }
             obs.unobserve(el);
           }
         });
@@ -44,4 +47,3 @@ document.addEventListener("DOMContentLoaded", () => {
     revealElements.forEach((el) => el.classList.add("reveal--visible"));
   }
 });
-
