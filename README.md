@@ -1,9 +1,87 @@
-## Buenas 👋
+# Landing de automatización e IA - GofioCodeTech
 
-Somos una empresa creada por un grupo de amigos de Tenerife, en las Islas Canarias, especializada en la automatización de procesos para empresas. Nuestro objetivo es ayudar a negocios a ahorrar tiempo y dinero, mejorar la atención al cliente y optimizar su gestión diaria mediante soluciones tecnológicas sencillas y eficientes.
+Landing page estática y responsive tipo startup tecnológica / SaaS, enfocada en **automatización de procesos e inteligencia artificial**. Está pensada para desplegarse fácilmente en **GitHub Pages**.
 
-Nos enfocamos principalmente en la automatización de la comunicación con clientes a través de WhatsApp, implementando sistemas que permiten responder preguntas frecuentes automáticamente, gestionar reservas o citas en calendarios y facilitar la organización de clientes sin necesidad de intervención manual constante.
+## Estructura del proyecto
 
-Nuestra misión es acercar la automatización y la inteligencia digital a pequeñas y medianas empresas, permitiéndoles ofrecer una atención más rápida y profesional, durante las 24 horas del día, mientras reducen la carga de trabajo administrativo.
+```text
+/project
+ ├── index.html   # Página principal
+ ├── style.css    # Estilos principales (responsive + animaciones)
+ ├── script.js    # Navegación móvil + animaciones de scroll
+ └── README.md    # Este archivo
+```
 
-Creemos en soluciones prácticas, accesibles y adaptadas a las necesidades reales de cada negocio, ayudando a que más empresas puedan aprovechar las ventajas de la tecnología para crecer y mejorar su servicio.
+## Características
+
+- **Diseño** moderno, minimalista y profesional tipo SaaS.
+- **Paleta de colores** fija: `#1A1C20` (fondo), `#D4A373` (acento), `#8D99AE` (texto secundario), `#FEFAE0` (texto claro).
+- **Tipografía**: `Inter` desde Google Fonts.
+- **100% responsive**: optimizada para móvil, tablet y escritorio.
+- **Navbar sticky** con botón de llamada a la acción “Solicitar demo”.
+- **Secciones**:
+  - Hero principal
+  - Sobre nosotros
+  - Servicios (4 tarjetas)
+  - Call To Action
+  - Contacto
+  - Footer
+- **Animaciones suaves**:
+  - Aparición con `fade-in` al hacer scroll (IntersectionObserver).
+  - Hover elegante en botones y tarjetas.
+- **SEO básico**:
+  - `meta description`
+  - `meta viewport`
+  - título optimizado.
+
+## Cómo usar el proyecto
+
+1. Copia la carpeta `project` dentro de tu repositorio de GitHub (o convierte esta carpeta en el propio repositorio).
+2. Asegúrate de que la estructura de archivos sea exactamente:
+
+   ```text
+   / (raíz del repo)
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
+   ```
+
+   Si estás usando esta carpeta tal cual, puedes mover el contenido de `project` a la raíz del repositorio.
+
+3. Abre `index.html` en tu navegador para previsualizar la landing.
+
+## Despliegue en GitHub Pages
+
+1. Sube el código a un repositorio de GitHub.
+2. En GitHub, ve a **Settings → Pages**.
+3. En **Source**, selecciona:
+   - **Branch**: `main` (o la rama donde tengas los archivos).
+   - **Folder**: `/root`.
+4. Guarda los cambios. GitHub generará una URL del tipo:
+
+   ```text
+   https://tu-usuario.github.io/tu-repo
+   ```
+
+5. Espera unos minutos y entra en la URL para ver la landing publicada.
+
+## Personalización rápida
+
+- **Nombre de empresa**: busca `GofioCodeTech` en `index.html` y cámbialo por el nombre de tu proyecto.
+- **Datos de contacto** (sección Contacto):
+  - Email: edita `contacto@empresa.com`.
+  - Instagram: edita `@empresa` y la URL.
+  - Teléfono / WhatsApp: edita `+34 XXX XXX XXX` y el enlace de `wa.me`.
+- **Textos de secciones**: puedes modificar los textos de Hero, Sobre nosotros, Servicios y CTA directamente en `index.html`.
+
+## Tecnologías utilizadas
+
+- **HTML5** (estructura semántica).
+- **CSS3** con Flexbox y CSS Grid.
+- **JavaScript** vanilla para:
+  - Menú móvil.
+  - Animaciones de scroll con IntersectionObserver.
+
+No se utilizan frameworks pesados, lo que hace la landing ligera y rápida de cargar.
+

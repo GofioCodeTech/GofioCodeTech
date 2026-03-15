@@ -1,54 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>GofioCodeTech</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatización e Inteligencia Artificial | GofioCodeTech</title>
+  <meta name="description" content="Automatizamos tu negocio con inteligencia artificial y automatización de procesos. Bots de WhatsApp, gestión de citas, integración de sistemas y soluciones de IA desde Tenerife, Islas Canarias." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__brand">
+        <span class="navbar__logo-mark">G</span>
+        <span class="navbar__logo-text">GofioCodeTech</span>
+      </a>
 
-<header>
-  <h1>GofioCodeTech</h1>
-  <nav>
-    <a href="#services">Servicios</a>
-    <a href="#about">Sobre nosotros</a>
-    <a href="#contact">Contacto</a>
-  </nav>
-</header>
+      <nav class="navbar__nav">
+        <a href="#inicio" class="navbar__link">Inicio</a>
+        <a href="#servicios" class="navbar__link">Servicios</a>
+        <a href="#sobre-nosotros" class="navbar__link">Sobre nosotros</a>
+        <a href="#contacto" class="navbar__link">Contacto</a>
+      </nav>
 
-<section class="hero">
-  <h2>Soluciones digitales para tu negocio</h2>
-  <p>Desarrollo web, software y tecnología a medida.</p>
-</section>
+      <a href="#contacto" class="btn btn--primary navbar__cta">Solicitar demo</a>
 
-<section id="services">
-  <h2>Servicios</h2>
+      <button class="navbar__toggle" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-  <div class="service">
-    <h3>Desarrollo Web</h3>
-    <p>Webs modernas, rápidas y optimizadas.</p>
-  </div>
+  <main id="inicio">
+    <!-- Hero Section -->
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="overline">Automatización · IA · Bots</p>
+          <h1>Automatizamos tu negocio con Inteligencia Artificial</h1>
+          <p class="hero__subtitle">
+            Ayudamos a empresas a ahorrar tiempo, mejorar su atención al cliente y optimizar sus procesos
+            mediante automatización avanzada y bots inteligentes.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Solicitar demo</a>
+            <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+          </div>
+          <div class="hero__meta">
+            <span>Automatización de WhatsApp</span>
+            <span>Gestión de citas</span>
+            <span>Soluciones de IA</span>
+          </div>
+        </div>
 
-  <div class="service">
-    <h3>Aplicaciones</h3>
-    <p>Apps y plataformas adaptadas a tu negocio.</p>
-  </div>
+        <div class="hero__visual reveal">
+          <div class="hero-card">
+            <div class="hero-card__header">
+              <span class="hero-card__dot"></span>
+              <span class="hero-card__dot"></span>
+              <span class="hero-card__dot"></span>
+            </div>
+            <div class="hero-card__body">
+              <div class="hero-card__stat">
+                <span class="hero-card__label">Horas ahorradas al mes</span>
+                <span class="hero-card__value">120+</span>
+              </div>
+              <div class="hero-card__stat">
+                <span class="hero-card__label">Consultas atendidas por bots</span>
+                <span class="hero-card__value">24/7</span>
+              </div>
+              <div class="hero-card__flows">
+                <div class="hero-card__flow-item">
+                  <span class="hero-card__pill">Nuevo lead</span>
+                  <span class="hero-card__arrow">→</span>
+                  <span class="hero-card__pill hero-card__pill--accent">WhatsApp Bot</span>
+                </div>
+                <div class="hero-card__flow-item">
+                  <span class="hero-card__pill">Consulta cliente</span>
+                  <span class="hero-card__arrow">→</span>
+                  <span class="hero-card__pill hero-card__pill--accent">Respuesta IA</span>
+                </div>
+                <div class="hero-card__flow-item">
+                  <span class="hero-card__pill">Reserva cita</span>
+                  <span class="hero-card__arrow">→</span>
+                  <span class="hero-card__pill hero-card__pill--accent">Calendario</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__background-shape"></div>
+        </div>
+      </div>
+    </section>
 
-  <div class="service">
-    <h3>Automatización</h3>
-    <p>Automatizamos procesos para ahorrar tiempo.</p>
-  </div>
-</section>
+    <!-- Sobre nosotros -->
+    <section id="sobre-nosotros" class="section section--alt">
+      <div class="container section__grid section__grid--about">
+        <div class="section__content reveal">
+          <h2>Sobre nosotros</h2>
+          <p>
+            Somos un equipo de especialistas en automatización ubicado en Tenerife, en las Islas Canarias.
+          </p>
+          <p>
+            Ayudamos a empresas a optimizar su gestión y mejorar la atención al cliente mediante soluciones
+            basadas en automatización de procesos e inteligencia artificial.
+          </p>
+          <p>
+            Nuestro objetivo es eliminar tareas repetitivas para que los negocios puedan centrarse en lo que
+            realmente importa: crecer y ofrecer un mejor servicio.
+          </p>
+        </div>
+        <div class="section__side reveal">
+          <div class="about-card">
+            <p class="about-card__tag">Tenerife · Islas Canarias</p>
+            <p class="about-card__line">Automatización de procesos</p>
+            <p class="about-card__line">Bots de WhatsApp inteligentes</p>
+            <p class="about-card__line">Soluciones de IA a medida</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="contact">
-  <h2>Contacto</h2>
-  <p>Email: contacto@gofiocodetech.com</p>
-</section>
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2>Servicios</h2>
+          <p>Alineamos automatización e inteligencia artificial para adaptarnos a las necesidades de tu negocio.</p>
+        </header>
 
-<footer>
-  <p>© 2026 GofioCodeTech</p>
-</footer>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">💬</div>
+            <h3>Automatización de WhatsApp</h3>
+            <p>
+              Creación de bots para WhatsApp capaces de responder preguntas frecuentes, gestionar clientes,
+              capturar leads y automatizar conversaciones para mejorar la atención 24/7.
+            </p>
+          </article>
 
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">📅</div>
+            <h3>Gestión de citas y calendarios</h3>
+            <p>
+              Automatizamos reservas y programación de citas para que tus clientes puedan agendar reuniones
+              fácilmente sin intervención manual.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">⚙️</div>
+            <h3>Automatización de procesos</h3>
+            <p>
+              Conectamos herramientas y sistemas para eliminar tareas manuales, reducir errores y mejorar la
+              eficiencia de tu empresa.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">🧠</div>
+            <h3>Soluciones con Inteligencia Artificial</h3>
+            <p>
+              Implementamos IA para clasificar consultas, responder clientes automáticamente y optimizar procesos
+              internos clave.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="section section--cta">
+      <div class="container section__cta-inner reveal">
+        <div>
+          <h2>¿Quieres automatizar tu negocio?</h2>
+          <p>
+            Cuéntanos tu caso o solicita una demo para ver cómo podemos ayudarte a automatizar tu empresa.
+          </p>
+        </div>
+        <a href="#contacto" class="btn btn--primary btn--lg">Solicitar demo</a>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2>Contacto</h2>
+          <p>Elige el canal que prefieras y hablemos de tu proyecto.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">✉️</div>
+            <h3>Email</h3>
+            <p><a href="mailto:contacto@empresa.com">contacto@empresa.com</a></p>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">📷</div>
+            <h3>Instagram</h3>
+            <p><a href="https://instagram.com/empresa" target="_blank" rel="noopener">@empresa</a></p>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">📱</div>
+            <h3>Teléfono / WhatsApp</h3>
+            <p><a href="https://wa.me/34000000000" target="_blank" rel="noopener">+34 XXX XXX XXX</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Automatización · Inteligencia Artificial · Bots de WhatsApp</p>
+      <p>Tenerife · Islas Canarias</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
